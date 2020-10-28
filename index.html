@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Gozem</title>
+	<link rel="stylesheet" type="text/css" href="ui.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+
+	<header>
+		<nal>
+			<ul>
+				<li><a href="#">Brand</a></li>
+				<div>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Login</a></li>
+				</div>
+				<img class="bars" src="bars.png">
+			</ul>
+		</nal>
+	</header>
+	<section>
+		<div id="guests_details">
+			<!--  -->
+			<div id="guests_options_row" >
+				<h5>Guests</h5>
+
+				<select id="guests_options">
+					<option>---</option>
+				</select>
+
+				<button id="filterButton" onclick="onFilterButtonClick()">Less Filter</button>
+			</div>
+
+			<div id="itinerary_row">
+				<div>
+					<h5> Itinetary</h5>
+
+				</div>
+
+				<div>
+					<div>
+						<input type="text">
+						<input type="text">
+						<input type="text">
+					</div>
+					<div>
+						<input type="text">
+						<input type="text">
+						<input type="text">
+					</div>
+					<div>
+						<input type="text">
+						<input type="text">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+
+			<div id="result-row">
+				<div onclick="onResultClick('flex')" class="result">
+					<div>
+						<h5>$180</h5>
+					</div>
+					<div>
+						<div class="result-line">
+							<div>
+								<img src="air_asia.png">
+								<h4>Air Asia</h4>
+							</div>
+							<div>
+								<h4>10:10pm - 11.35pm</h4>
+								<h5>Mon 11 Jun</h5>
+							</div>
+							<div>
+								<h4>2h 25min</h4>
+								<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+							</div>
+						</div>
+						<div class="result-line">
+							<div>
+								<img src="air_asia.png">
+								<h4>Air Asia</h4>
+							</div>
+							<div>
+								<h4>10:10pm - 11.35pm</h4>
+								<h5>Mon 11 Jun</h5>
+							</div>
+							<div>
+								<h4>2h 25min</h4>
+								<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div onclick="onResultClick('flex')" class="result">
+					<div>
+						<h5>$180</h5>
+					</div>
+					<div>
+						<div class="result-line">
+							<div>
+								<img src="air_asia.png">
+
+								<h4>Air Asia</h4>
+							</div>
+							<div>
+								<h4>10:10pm - 11.35pm</h4>
+								<h5>Mon 11 Jun</h5>
+							</div>
+							<div>
+								<h4>2h 25min</h4>
+								<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+							</div>
+						</div>
+						<div class="result-line">
+							<div>
+								<img src="air_asia.png">
+								
+								<h4>Air Asia</h4>
+							</div>
+							<div>
+								<h4>10:10pm - 11.35pm</h4>
+								<h5>Mon 11 Jun</h5>
+							</div>
+							<div>
+								<h4>2h 25min</h4>
+								<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="guests_maps_btn">
+			<a href="maps.html">Maps</a>
+		</div>
+
+		<div id="guests_maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4031787.2222341835!2d2.30937765!3d9.3073556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbj!4v1603829400243!5m2!1sfr!2sbj" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+
+		<div id="pop-background">
+
+			<div id="pop-content">
+				<div>
+					<img onclick="onResultClick('none')" id="croix" src="croix.png">
+					<h4>Itinerary details</h4>
+				</div>
+				<div>
+					<div id="result-row">
+						<div class="result">
+							<div>
+								<h5>$180</h5>
+							</div>
+							<div>
+								<div class="result-line">
+									<div>
+										<img src="air_asia.png">
+										<h4>Air Asia</h4>
+									</div>
+									<div>
+										<h4>10:10pm - 11.35pm</h4>
+										<h5>Mon 11 Jun</h5>
+									</div>
+									<div>
+										<h4>2h 25min</h4>
+										<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+									</div>
+								</div>
+								<div class="result-line">
+									<div>
+										<img src="air_asia.png">
+										<h4>Air Asia</h4>
+									</div>
+									<div>
+										<h4>10:10pm - 11.35pm</h4>
+										<h5>Mon 11 Jun</h5>
+									</div>
+									<div>
+										<h4>2h 25min</h4>
+										<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="result">
+							<div>
+								<h5>$180</h5>
+							</div>
+							<div>
+								<div class="result-line">
+									<div>
+										<img src="air_asia.png">
+
+										<h4>Air Asia</h4>
+									</div>
+									<div>
+										<h4>10:10pm - 11.35pm</h4>
+										<h5>Mon 11 Jun</h5>
+									</div>
+									<div>
+										<h4>2h 25min</h4>
+										<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+									</div>
+								</div>
+								<div class="result-line">
+									<div>
+										<img src="air_asia.png">
+										
+										<h4>Air Asia</h4>
+									</div>
+									<div>
+										<h4>10:10pm - 11.35pm</h4>
+										<h5>Mon 11 Jun</h5>
+									</div>
+									<div>
+										<h4>2h 25min</h4>
+										<h5>Singapore (SIN) to Bangkok (DMK)</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
+
+<script>
+	
+const onFilterButtonClick = () => {
+	let itinerary_row = document.getElementById('itinerary_row');
+	let filterButton = document.getElementById('filterButton');
+	
+	if(itinerary_row.style.display === "none"){
+		itinerary_row.style.display = "flex"
+		filterButton.innerHTML = "Less Filter"
+	}else{
+		itinerary_row.style.display = 'none'
+		filterButton.innerHTML = "More Filter"
+	}
+}
+
+const onResultClick = (type) => {
+	let pop_background = document.getElementById('pop-background');
+	pop_background.style.display = type
+}
+
+let optionList = document.getElementById('guests_options').options;
+let options = [
+  {
+    text: '1 Guests',
+    value: '1'
+  },
+  {
+    text: '2 Guests',
+    value: '2',
+    selected: true
+  },
+  {
+    text: '3 Guests',
+    value: '3'
+  },
+  {
+    text: '4 Guests',
+    value: '4'
+  }
+];
+
+options.forEach(option =>
+  optionList.add(
+    new Option(option.text, option.value, option.selected)
+  )
+);
+</script>
